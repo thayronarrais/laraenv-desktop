@@ -1,12 +1,18 @@
 # LaraEnv
 
+> **Repositório canônico / Canonical repository:** [thayronarrais/laraenv](https://github.com/thayronarrais/laraenv)
+>
+> **Português:** Este repositório foi provisório para a publicação inicial dos fontes do desktop. Use o repositório canônico para o código atual, issues, contribuições e releases. O snapshot e o histórico desta publicação inicial permanecem aqui.
+>
+> **English:** This repository hosted the initial desktop source publication. Use the canonical repository for current source, issues, contributions and releases. The initial snapshot and public history remain here.
+
 LaraEnv is a Windows desktop development environment for PHP/Laravel, Node.js and Python, with local services and a workspace for terminals, files, Git and optional coding agents.
 
 It is built with Go, Wails v2, React and Tailwind. The original desktop source is licensed under [Apache-2.0](LICENSE). Third-party components keep their own licenses; see [NOTICE](NOTICE), [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt) and the [licensing guide](docs/licensing.md).
 
 The desktop works with local data without a LaraEnv account or subscription. The optional cloud integration starts disabled, including for existing profiles that have not opted in. This source tree includes the cloud client; the separately maintained hosted backend remains private and is not needed to build or use local desktop features.
 
-The desktop source and contributions live in [laraenv-desktop](https://github.com/thayronarrais/laraenv-desktop). Existing binary releases and runtime assets remain in the [release repository](https://github.com/thayronarrais/laraenv/releases). Published packages can predate the changes in this source tree; consult each release's notes for its behavior and validation.
+The desktop source and contributions live in [laraenv](https://github.com/thayronarrais/laraenv). Existing binary releases and runtime assets remain in the [release repository](https://github.com/thayronarrais/laraenv/releases). Published packages can predate the changes in this source tree; consult each release's notes for its behavior and validation.
 
 ## Features
 
@@ -35,8 +41,8 @@ The bare `LaraEnv.exe` release asset is an updater payload; the executable alone
 Clone the desktop repository:
 
 ```powershell
-git clone https://github.com/thayronarrais/laraenv-desktop.git
-cd laraenv-desktop
+git clone https://github.com/thayronarrais/laraenv.git
+cd laraenv
 ```
 
 Use **Go 1.26.10**, **Node.js 24 or newer** with npm, and **Wails v2.12.0 from this checkout's Go module graph**. Build and development instructions, including the clean-checkout bootstrap and tests, are in the [development guide](docs/development.md).
@@ -57,6 +63,6 @@ MSI packaging additionally needs .NET SDK 8, WiX CLI 5.0.2 and its matching UI/U
 
 ## Contribute and report issues
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) for development and pull-request guidance. Use [GitHub issues](https://github.com/thayronarrais/laraenv-desktop/issues) for reproducible bugs and feature proposals, with sensitive data removed.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) for development and pull-request guidance. Use [GitHub issues](https://github.com/thayronarrais/laraenv/issues) for reproducible bugs and feature proposals, with sensitive data removed.
 
 Report security vulnerabilities privately using [SECURITY.md](SECURITY.md).
